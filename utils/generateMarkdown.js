@@ -13,6 +13,24 @@ function renderLicenseBadge(license) {
     case 'Mozilla':
       return '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen?link=https://www.mozilla.org/en-US/MPL/2.0/)](https://www.mozilla.org/en-US/MPL/2.0/)';
     default:
+      return '';
+  }
+}
+
+// If there is no license, return an empty string
+function renderLicenseSection(license) {
+  switch (license) {
+    case 'Apache':
+      return 'This is built under  the [Apache License](https://www.apache.org/licenses/LICENSE-2.0.html)';
+    case 'CCL':
+      return 'This is built under  the [Creative Commons Licenses (CCL)](https://creativecommons.org/licenses/)';
+    case 'GNU':
+      return 'This is built under  the [GNU General Public License (GPL)](https://www.gnu.org/licenses/gpl-3.0.html)';
+    case 'MIT':
+      return 'This is built under the [MIT License](https://opensource.org/licenses/MIT)';
+    case 'Mozilla':
+      return 'This is built under  the [Mozilla Public License (MPL)](https://www.mozilla.org/en-US/MPL/2.0/)';
+    default:
       return 'No license selected';
   }
 }
@@ -36,6 +54,8 @@ function generateMarkdown(data) {
 
   ![Static Badge](https://img.shields.io/badge/-Markdown-purple?logo=markdown&logoColor=white&style=flat)
   ![Static Badge](https://img.shields.io/badge/-Javascript-blue?logo=javascript&logoColor=white&style=flat)
+
+   ${renderLicenseBadge(license)}
   
   ## Description
   
@@ -61,7 +81,7 @@ function generateMarkdown(data) {
   
   ## License
 
-  ${renderLicenseBadge(license)}
+  ${renderLicenseSection(license)}
   
   ## Contributing
 
