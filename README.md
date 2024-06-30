@@ -47,6 +47,15 @@ If you have any questions, you can reach me at via [email](mailto:misc@mattrgord
 
 ## References
 
+- [GitHub Repo](https://github.com/mgordon82/readme-generator)
+- [Video Capture](https://mgordon82.github.io/readme-generator/)
+- [Download Video](https://mgordon82.github.io/readme-generator/assets/CreateAReadme.mov)
+
+Special Thanks to:
+
+- [Shields.io](https://shields.io/)
+- [Inquirer Package](https://www.npmjs.com/package/inquirer)
+
 ## Screenshots
 
 ![Terminal Example](./assets/terminal-example.png)
