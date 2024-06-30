@@ -45,7 +45,8 @@ function generateMarkdown(data) {
     license,
     contributions,
     testInstructions,
-    questions,
+    email,
+    github,
   } = data;
 
   return `# ${title}
@@ -93,7 +94,9 @@ function generateMarkdown(data) {
   
   ## Questions
 
-  ${questions}
+  You can check out my other projects and reach out on my [GitHub](http://github.com/${github}).
+
+  If you have any questions, you can reach me at via [email](mailto:${email}).
 `;
 }
 

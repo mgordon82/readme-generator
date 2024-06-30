@@ -18,7 +18,7 @@ const questions = [
     name: 'installation',
   },
   {
-    message: 'How do you use the app?',
+    message: 'How is the app used?',
     name: 'usage',
   },
   {
@@ -62,8 +62,12 @@ const questions = [
     name: 'testInstructions',
   },
   {
-    message: 'Questions?',
-    name: 'questions',
+    message: 'What is your GitHub username?',
+    name: 'github',
+  },
+  {
+    message: 'What is your email address?',
+    name: 'email',
   },
 ];
 
